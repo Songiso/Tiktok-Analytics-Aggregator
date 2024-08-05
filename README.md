@@ -1,8 +1,12 @@
 
-# TikTok Analytics Aggregator Data Engineering Project
+# Project Demo Video
 
 
-https://github.com/HelloSongi/TikTok-User-data-analysis/assets/69304233/7d407c04-5bd8-4cd6-8508-5f7d956410b2
+
+
+Uploading demo_video.mp4…
+
+
 
 
 This repository contains a data engineering project that fetches TikTok user data, performs data processing, and stores the results in a MongoDB database. The project is built using Python, Flask, BeautifulSoup, requests, and pymongo.
