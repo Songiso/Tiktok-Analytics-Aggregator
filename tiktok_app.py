@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template, request
 from bs4 import BeautifulSoup
 import requests
@@ -6,7 +7,9 @@ from pymongo import MongoClient
 app = Flask(__name__)
 
 def save_user_data(username, user_data):
-    client = MongoClient('mongodb+srv://<username>:<password>@cluster0.kiid4gt.mongodb.net/')
+    mongo_username = os.getenv('MONGO_INITDB_ROOT_USERNAME')
+    mongo_password = os.getenv('MONGO_INITDB_ROOT_PASSWORD')
+    client = MongoClient(f'mongodb://{mongo_username}:{mongo_password}@mongo:27017/')
     db = client['tiktok_data']
     collection = db['tiktok']
     collection.insert_one(user_data)
