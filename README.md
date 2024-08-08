@@ -47,7 +47,7 @@ To run the project locally, follow these steps:
 5. After the image is built run the container using `docker run -p 5000:5000 tiktok-app`
 6. Access the web application in your browser at `http://localhost:5000`.
 
-Make sure you have Python, Flask, and the necessary dependencies installed on your system.
+
 
 ## Contributing
 
